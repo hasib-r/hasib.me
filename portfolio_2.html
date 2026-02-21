@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasibur Rahman | EEE Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@800&display=swap');
+        
+        :root { --volt: #d9f99d; --dark: #0a0a0a; }
+        html { scroll-behavior: smooth; } /* Added for smooth transition to footer */
+        body { background-color: var(--dark); color: #e5e7eb; font-family: 'Space Grotesk', sans-serif; }
+        h1, h2, .font-syne { font-family: 'Syne', sans-serif; }
+        
+        .border-volt { border: 1px solid var(--volt); }
+        .text-volt { color: var(--volt); }
+        .bg-volt { background-color: var(--volt); }
+        
+        .hero-title { font-size: clamp(3rem, 10vw, 8rem); line-height: 0.9; }
+        
+        .publication-card {
+            background: linear-gradient(145deg, #111111, #1a1a1a);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .publication-card:hover { transform: translateY(-10px) scale(1.02); border-color: var(--volt); }
+    </style>
+</head>
+<body class="selection:bg-volt selection:text-black">
+
+    <nav class="p-6 fixed w-full z-50 flex justify-end items-center mix-blend-difference">
+        <div class="flex gap-8 text-xs uppercase tracking-widest font-bold">
+            <a href="#work" class="hover:text-volt transition">Experience</a>
+            <a href="#about" class="hover:text-volt transition">Lifestyle</a>
+            <a href="#footer-contact" class="bg-volt text-black px-4 py-1 hover:bg-white transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center px-6 pt-20">
+        <div class="container mx-auto">
+            <p class="text-volt font-bold mb-4 flex items-center gap-2">
+                <span class="w-12 h-[1px] bg-volt"></span> B.Sc. ELECTRICAL ENGINEER
+            </p>
+            <h1 class="hero-title font-black uppercase tracking-tighter mb-8">
+                HASIBUR<br><span class="text-transparent" style="-webkit-text-stroke: 1px #d9f99d;">RAHMAN</span>
+            </h1>
+            
+            <div class="grid md:grid-cols-3 gap-12 items-end">
+                <div class="md:col-span-2">
+                    <p class="text-2xl text-gray-400 max-w-2xl leading-tight">
+                        Innovative <span class="text-white font-bold">EEE Engineer</span> with a B.Sc. from AIUB and a published background in IoT-based Power Management. Experienced in utility operations through a successful internship at DESCO. Dedicated to implementing smart technologies in the power sector.
+                    </p>
+                </div>
+                <div class="relative group">
+                    <img src="https://github.com/hasib-r/Img/blob/main/88194192_2555244744742119_2300069340512256000_n.jpg?raw=true" 
+                         alt="Hasibur Rahman" 
+                         class="w-full aspect-square object-cover filter grayscale contrast-125 border-volt border-8 group-hover:grayscale-0 transition duration-700">
+                    <div class="absolute -bottom-4 -right-4 bg-volt text-black p-4 font-bold text-sm uppercase">AIUB Graduate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="border-y border-gray-800 py-8 my-10 bg-[#0f0f0f]">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div><p class="text-gray-500 text-xs uppercase">Internship</p><p class="text-xl font-bold">DESCO Limited</p></div>
+            <div><p class="text-gray-500 text-xs uppercase">Publications</p><p class="text-xl font-bold">1 (IEEE Xplore)</p></div>
+            <div><p class="text-gray-500 text-xs uppercase">Languages</p><p class="text-xl font-bold">Bengali, EN, DE</p></div>
+            <div><p class="text-gray-500 text-xs uppercase">Cycling</p><p class="text-xl font-bold">Endurance</p></div>
+        </div>
+    </div>
+
+    <section id="work" class="py-24 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-black mb-16 uppercase tracking-tight">Technical <span class="text-volt">Core</span></h2>
+            <div class="grid lg:grid-cols-2 gap-4">
+                <div class="publication-card p-10 rounded-sm border border-gray-800 flex flex-col justify-between min-h-[400px]">
+                    <div>
+                        <span class="text-xs font-bold border border-volt text-volt px-2 py-1 mb-6 inline-block uppercase tracking-tighter">Research Publication</span>
+                        <h3 class="text-3xl font-bold leading-none mb-6 mt-4">IoT-Based Power Monitoring & Management of Distribution Substations</h3>
+                        <p class="text-gray-500 mb-8">Published in IEEE Xplore (2023), this project optimizes substation efficiency through real-time IoT integration.</p>
+                    </div>
+                    <a href="https://ieeexplore.ieee.org/document/10428780" class="text-volt font-black italic hover:underline decoration-4">ACCESS DOCUMENT ↗</a>
+                </div>
+                <div class="publication-card p-10 rounded-sm border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold border border-gray-500 text-gray-400 px-2 py-1 mb-6 inline-block uppercase tracking-tighter">Industry Experience</span>
+                        <h3 class="text-3xl font-bold leading-none mb-6 mt-4 italic text-volt">DESCO Internship</h3>
+                        <p class="text-gray-500 mb-8">Hands-on experience with distribution networks, load management, and substation maintenance protocols.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-xs bg-gray-800 px-3 py-1 text-gray-300 font-bold uppercase">Power Systems</span>
+                        <span class="text-xs bg-gray-800 px-3 py-1 text-gray-300 font-bold uppercase">Distribution</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-volt text-black overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-6xl font-black uppercase mb-6 tracking-tighter">Beyond the <br> Circuit.</h2>
+                    <p class="text-xl font-bold leading-snug mb-8">
+                        When I'm not calculating load distributions, I'm chasing horizons on my bike or running marathons. 
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="border-2 border-black px-6 py-2 font-black uppercase italic">Marathon 🏃</span>
+                        <span class="border-2 border-black px-6 py-2 font-black uppercase italic">Cycling 🚴</span>
+                        <span class="border-2 border-black px-6 py-2 font-black uppercase italic">Exploration 🌍</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex gap-4 text-8xl font-black opacity-20 select-none">
+                    <i class="fas fa-bicycle"></i>
+                    <i class="fas fa-running"></i>
+                    <i class="fas fa-film"></i>
+                    <i class="fas fa-book"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-contact" class="py-20 px-6 border-t border-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-10 uppercase tracking-[0.5em]">Find me online</h2>
+            <div class="flex justify-center flex-wrap gap-12 mb-20 text-gray-500">
+                <a href="https://linkedin.com/in/hasibur-rahman-682a75168/" class="hover:text-volt font-bold text-sm tracking-widest uppercase">LinkedIn</a>
+                <a href="https://github.com/hasib-r" class="hover:text-volt font-bold text-sm tracking-widest uppercase">GitHub</a>
+                <a href="https://x.com/MdHasib04381178" class="hover:text-volt font-bold text-sm tracking-widest uppercase">X (Twitter)</a>
+                <a href="https://facebook.com/hasibur.rahman.27/" class="hover:text-volt font-bold text-sm tracking-widest uppercase">Facebook</a>
+            </div>
+            <p class="text-[10px] text-gray-700 uppercase tracking-widest">Hasibur Rahman &copy; 2026 | yhasibur.rahman@gmail.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
